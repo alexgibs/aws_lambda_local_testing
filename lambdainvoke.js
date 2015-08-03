@@ -35,6 +35,7 @@ var index = require('./' + (process.argv[2] || 'index.js'))
     console.log("--------------------------")
     console.log("Execution time: %dms", process.hrtime(start)[1] / 1000000)
     console.log("--------------------------")
+    process.exit()
   }
   , contextCalled = false
 
